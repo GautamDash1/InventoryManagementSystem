@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login</h2>
+
+        <!-- Display error message if present -->
+        <div class="error-message" id="error-message" style="display: none;">
+            <p>Error message goes here!</p>
+        </div>
+
+        <!-- Login form -->
+        <form action="/loginForm" method="POST">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Forgot password link -->
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <!-- Register link for unregistered users -->
+        <div class="register">
+            <p>If not registered, <a href="register.html">Click Here</a> to register.</p>
+        </div>
+    </div>
+</body>
+</html>
